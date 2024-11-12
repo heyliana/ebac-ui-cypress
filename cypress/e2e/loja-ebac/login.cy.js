@@ -8,10 +8,10 @@ describe('Funcionalidade: Login', () => {
     });
 
     it('Login com sucesso', () => {
-        cy.get('#username').type('annli.cytest@teste.com')
+        cy.get('#username').type('liana.test@cypress.com')
         cy.get('#password').type('algo@123')
         cy.get('.woocommerce-form > .button').click()
-        cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain', 'Olá, annli.cytest')
+        cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain', 'Olá, liana.test')
     });
 
     it('Mensagem de erro ao inserir usuário inválido', () => {
@@ -22,7 +22,7 @@ describe('Funcionalidade: Login', () => {
     });
 
     it('Mensagem de erro ao inserir senha inválida', () => {
-        cy.get('#username').type('annli.cytest@teste.com')
+        cy.get('#username').type('liana.test@cypress.com')
         cy.get('#password').type('algg@234')
         cy.get('.woocommerce-form > .button').click()
         cy.get('.woocommerce-error').should('contain', 'Perdeu a senha?')
@@ -33,13 +33,13 @@ describe('Funcionalidade: Login', () => {
             cy.get('#username').type(dados.usuario)
             cy.get('#password').type(dados.senha)
             cy.get('.woocommerce-form > .button').click()
-            cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain', 'Olá, annli.cytest')
+            cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain', 'Olá, liana.test')
         })
     })
 
     it('Login com sucesso - usando comandos', () => {
-        cy.login('annli.cytest@teste.com', "algo@123")
-        cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain', 'Olá, annli.cytest')
+        cy.login('liana.test@cypress.com', "algo@123")
+        cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain', 'Olá, liana.test')
     })
 
 
