@@ -1,0 +1,23 @@
+[
+    {
+        "nomeProduto": "Torque Power Short",
+        "tamanhoProduto": "36",
+        "corProduto": "Purple",
+        "quantidadeProduto": 3
+    },
+
+    {
+        "nomeProduto": "Cassia Funnel Sweatshirt",
+        "tamanhoProduto": "L",
+        "corProduto": "White",
+        "quantidadeProduto": 2
+    },
+
+    {
+        "nomeProduto": "Argus All-Weather Tank",
+        "tamanhoProduto": "M",
+        "corProduto": "Gray",
+        "quantidadeProduto": 2
+    }
+
+]
